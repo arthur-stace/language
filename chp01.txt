@@ -1788,6 +1788,17 @@ conscientious conscientiously deceitful deceive ...
        What happens when you type ['Monty', 'Python'] * 20, or 3 * sent1?
     4. su Review [80]1 on computing with language. How many words are
        there in text2? How many distinct words are there?
+
+```python
+from nltk.book import *
+
+# https://docs.python.org/2/library/inspect.html
+import inspect
+inspect.getmembers(text2)
+
+len(text2.vocab().keys())
+# => 6833
+```
     5. su Compare the lexical diversity scores for humor and romance
        fiction in [81]1.1. Which genre is more lexically diverse?
     6. su Produce a dispersion plot of the four main protagonists in Sense
