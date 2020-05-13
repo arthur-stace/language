@@ -1792,15 +1792,16 @@ conscientious conscientiously deceitful deceive ...
 ```python
 from nltk.book import *
 
-# https://docs.python.org/2/library/inspect.html
-import inspect
-inspect.getmembers(text2)
-
-len(text2.vocab().keys())
+len(set(text2))
 # => 6833
 ```
     5. su Compare the lexical diversity scores for humor and romance
        fiction in [81]1.1. Which genre is more lexically diverse?
+
+```python
+# I don't understand what "humor and romance fiction" refers to. There is a
+# table above with the information re. lexical diversity of these genres
+```
     6. su Produce a dispersion plot of the four main protagonists in Sense
        and Sensibility: Elinor, Marianne, Edward, and Willoughby. What can
        you observe about the different roles played by the males and
