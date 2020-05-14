@@ -5,9 +5,10 @@ chapters needs to be covered, along with a focus on any one or all of the
 remaining six chapters.
 
 ```shell
-curl https://www.nltk.org/book/ch00.html | pup '#tab-course-plans td text{}'
+make schedule
 ```
 
 #### TODO
 
-- [ ] compile this doc to generate schedule
+- [X] compile this doc to generate schedule
+- [ ] integrate with calcurse
