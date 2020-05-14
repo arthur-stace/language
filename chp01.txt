@@ -1806,6 +1806,11 @@ len(set(text2))
        and Sensibility: Elinor, Marianne, Edward, and Willoughby. What can
        you observe about the different roles played by the males and
        females in this novel? Can you identify the couples?
+
+```
+# NB need proper development environment
+# https://github.com/mohamedi/Python-Introduction/blob/master/Python%20Hands%20On/Python%20Introduction/week12/exercise_sheet_nltk_3.py
+```
     7. su Find the collocations in text5.
     8. su Consider the following Python expression: len(set(text4)). State
        the purpose of this expression. Describe the two steps involved in
