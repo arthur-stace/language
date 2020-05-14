@@ -9,7 +9,7 @@ default: schedule
 tmp/notes:
 	@mkdir -p $@
 
-schedule: notes
+schedule: tmp/notes
 	@curl https://www.nltk.org/book/ch00.html \
 	| pup '#tab-course-plans td text{}' \
 	| split -l 3
@@ -18,6 +18,6 @@ schedule: notes
 	${MAKE} clean
 
 clean:
-	@mv tmp/notes ./
+	@mv tmp/notes/* ./notes/
 	@rm -rf x*
 	@rm -rf tmp/*
