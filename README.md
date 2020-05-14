@@ -8,6 +8,31 @@ remaining six chapters.
 make schedule
 ```
 
+Using calcurse the workflow is something like this
+
+```
+     ,------.          ,---------.          ,-----.             ,-----.          ,----.
+     |github|          |container|          |notes|             |event|          |todo|
+     `--+---'          `----+----'          `--+--'             `--+--'          `-+--'
+        |       push        |                  |                   |               |   
+        | <-----------------|                  |                   |               |   
+        |                   |                  |                   |               |   
+        |                   |       run        |                   |               |   
+        |                   |<-----------------|                   |               |   
+        |                   |                  |                   |               |   
+        |                   |                  |capture + schedule |               |   
+        |                   |                  |<----------------->|               |   
+        |                   |                  |                   |               |   
+        |                   |                  |              select               |   
+        |                   |                  |---------------------------------->|   
+        |                   |                  |                   |               |   
+        |                   |                  |              ipynb|               |   
+        |                   |                  |<----------------------------------|   
+     ,--+---.          ,----+----.          ,--+--.             ,--+--.          ,-+--.
+     |github|          |container|          |notes|             |event|          |todo|
+     `------'          `---------'          `-----'             `-----'          `----'
+```
+
 #### TODO
 
 - [X] compile this doc to generate schedule
