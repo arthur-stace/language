@@ -1,23 +1,16 @@
-default: schedule
-	# docker run \
-	# 	--rm \
-	# 	-p 10000:8888 \
-	# 	-e JUPYTER_ENABLE_LAB=yes \
-	# 	-v "$PWD":/home/jovyan/work \
-	# 	jupyter/scipy-notebook
+DOMAIN = https://www.nltk.org
+COURSE_SECTIONS = tmp/ch00.txt \
+									tmp/ch01.txt \
+									tmp/ch02.txt \
+									tmp/ch03.txt \
+									tmp/ch04.txt \
+									tmp/ch05.txt \
+									tmp/ch06.txt \
+									tmp/ch07.txt \
+									tmp/ch08.txt \
+									tmp/ch09.txt \
+									tmp/ch10.txt \
+									tmp/ch11.txt
 
-tmp/notes:
-	@mkdir -p $@
-
-schedule: tmp/notes
-	@curl https://www.nltk.org/book/ch00.html \
-	| pup '#tab-course-plans td text{}' \
-	| split -l 3
-	@mv x* tmp/
-	@sh ./schedule.sh > apts
-	${MAKE} clean
-
-clean:
-	@mv tmp/notes/* ./notes/
-	@rm -rf x*
-	@rm -rf tmp/*
+include makefiles/todo.mk
+include makefiles/nltk.org.mk
